@@ -1,0 +1,19 @@
+/* line 1, ../../sass/elements/text.sass */
+.text {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 1.45em;
+}
+/* line 7, ../../sass/elements/text.sass */
+.text.-bold {
+  font-weight: bold;
+}
+/* line 10, ../../sass/elements/text.sass */
+.text.-white {
+  color: #fff;
+}
+/* line 13, ../../sass/elements/text.sass */
+.text.-center {
+  text-align: center;
+}

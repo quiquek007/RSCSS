@@ -1,0 +1,9 @@
+/* line 1, ../../sass/elements/category.sass */
+.category {
+  margin-top: 20px;
+  list-style-type: disc;
+  font-family: "Open Sans";
+  color: #333;
+  font-size: 14px;
+  line-height: 1.45em;
+}

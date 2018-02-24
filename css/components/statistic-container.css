@@ -1,0 +1,12 @@
+/* line 1, ../../sass/components/statistic-container.sass */
+.statistic-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 10%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.79) url("../../img/bg_lawyer_content2.jpg") no-repeat -250px -80px;
+  margin-top: 650px;
+}

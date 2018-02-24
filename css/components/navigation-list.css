@@ -1,0 +1,15 @@
+/* line 1, ../../sass/components/navigation-list.sass */
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  align-items: center;
+}
+/* line 7, ../../sass/components/navigation-list.sass */
+.navigation-list li {
+  padding: 5px;
+}
+/* line 10, ../../sass/components/navigation-list.sass */
+.navigation-list .link {
+  padding: 10px 10px;
+}

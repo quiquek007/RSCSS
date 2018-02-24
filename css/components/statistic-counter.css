@@ -1,0 +1,22 @@
+/* line 1, ../../sass/components/statistic-counter.sass */
+.statistic-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* line 7, ../../sass/components/statistic-counter.sass */
+.statistic-counter > span:first-child {
+  font-family: "Roboto Regular";
+  font-size: 72px;
+  font-weight: 700;
+  color: #d19c1e;
+}
+/* line 13, ../../sass/components/statistic-counter.sass */
+.statistic-counter > span:last-child {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.45em;
+  margin-top: 30px;
+}

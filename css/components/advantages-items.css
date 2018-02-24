@@ -1,0 +1,31 @@
+/* line 1, ../../sass/components/advantages-items.sass */
+.advantages-items {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  align-items: center;
+  width: 22%;
+  text-align: center;
+  margin: 0 2%;
+  margin-top: 50px;
+}
+/* line 11, ../../sass/components/advantages-items.sass */
+.advantages-items > .title {
+  margin-top: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+/* line 17, ../../sass/components/advantages-items.sass */
+.advantages-items > .text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+/* line 20, ../../sass/components/advantages-items.sass */
+.advantages-items > .text.-nomargin {
+  margin-top: 0;
+}
+/* line 23, ../../sass/components/advantages-items.sass */
+.advantages-items.-pullright {
+  margin-left: 13%;
+}

@@ -1,0 +1,25 @@
+/* line 1, ../../sass/components/get-button.sass */
+.get-button {
+  background: #303030;
+  border: 1px solid #d19c1e;
+  text-align: center;
+}
+/* line 6, ../../sass/components/get-button.sass */
+.get-button:hover {
+  transition: 0.3s all;
+  background: #d19c1e;
+}
+/* line 9, ../../sass/components/get-button.sass */
+.get-button:hover > .link {
+  color: #303030;
+}
+/* line 12, ../../sass/components/get-button.sass */
+.get-button:not(:hover) {
+  transition: 0.7s all;
+}
+/* line 15, ../../sass/components/get-button.sass */
+.get-button > .link {
+  display: block;
+  height: 100%;
+  padding: 30px 50px;
+}

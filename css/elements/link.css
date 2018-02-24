@@ -1,0 +1,40 @@
+/* line 1, ../../sass/elements/link.sass */
+.link {
+  border-bottom: 2px solid transparent;
+  color: #e6e6e6;
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 10, ../../sass/elements/link.sass */
+.link:hover {
+  border-bottom: 2px solid #fff;
+}
+/* line 13, ../../sass/elements/link.sass */
+.link.-logo {
+  color: #D19C1E;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 34px;
+}
+/* line 19, ../../sass/elements/link.sass */
+.link.-phone {
+  color: #e6e6e6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  white-space: nowrap;
+}
+/* line 26, ../../sass/elements/link.sass */
+.link.-borderout:hover {
+  border-color: transparent;
+}
+/* line 29, ../../sass/elements/link.sass */
+.link.-orange {
+  color: #d19c1e;
+}
+/* line 32, ../../sass/elements/link.sass */
+.link.-blue {
+  color: #2a6496;
+}

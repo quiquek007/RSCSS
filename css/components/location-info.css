@@ -1,0 +1,27 @@
+/* line 1, ../../sass/components/location-info.sass */
+.location-info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  position: relative;
+}
+/* line 10, ../../sass/components/location-info.sass */
+.location-info:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  border: 30px solid transparent;
+  border-right: 40px solid #303030;
+}
+/* line 18, ../../sass/components/location-info.sass */
+.location-info > .text {
+  font-size: 20px;
+}
+/* line 21, ../../sass/components/location-info.sass */
+.location-info > .text:nth-child(even) {
+  margin-top: 30px;
+}

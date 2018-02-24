@@ -1,0 +1,20 @@
+/* line 1, ../../sass/elements/title.sass */
+.title {
+  color: #ffffff;
+  font-family: "Roboto Regular";
+  font-size: 22px;
+  text-align: center;
+}
+/* line 7, ../../sass/elements/title.sass */
+.title.-large {
+  font-size: 72px;
+  font-weight: 700;
+}
+/* line 11, ../../sass/elements/title.sass */
+.title.-black {
+  color: #333;
+}
+/* line 14, ../../sass/elements/title.sass */
+.title.-orange {
+  color: #d19c1e;
+}
