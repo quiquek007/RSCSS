@@ -1,3 +1,60 @@
+@import 'variablies'
+
 .our-advantages
-	width: 100%
 	display: flex
+	width: 100%
+
+	&.-first
+		> div:nth-child(1)
+			> span:nth-child(1)
+				&:before
+					display: flex
+					height: 65px
+					content: $svg_planning
+					padding-bottom: 20px
+		
+		> div:nth-child(2)
+			> span:nth-child(1)
+				&:before
+					display: flex
+					height: 65px
+					content: $svg_lock
+					padding-bottom: 20px
+		
+		> div:nth-child(3)
+			> span:nth-child(1)
+				&:before
+					display: flex
+					height: 65px
+					content: $svg_employee
+					padding-bottom: 20px
+
+
+	&.-second
+		> div:nth-child(1)
+			> span:nth-child(1)
+				&:before
+					display: flex
+					height: 65px
+					content: $svg_badge
+					padding-bottom: 20px
+		
+		> div:nth-child(2)
+			> span:nth-child(1)
+				&:before
+					display: flex
+					height: 65px
+					content: $svg_gears
+					padding-bottom: 20px
+		
+		> div:nth-child(3)
+			> span:nth-child(1)
+				&:before
+					display: flex
+					height: 65px
+					content: $svg_money
+					padding-bottom: 20px
+
+@media screen and (max-width: 768px)
+	.our-advantages
+		flex-direction: column

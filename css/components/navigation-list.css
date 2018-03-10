@@ -13,3 +13,74 @@
 .navigation-list .link {
   padding: 10px 10px;
 }
+
+@media screen and (max-width: 480px) {
+  /* line 14, ../../sass/components/navigation-list.sass */
+  .navigation-list {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  /* line 20, ../../sass/components/navigation-list.sass */
+  .navigation-list > li {
+    position: relative;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #a8d6ff;
+  }
+  /* line 26, ../../sass/components/navigation-list.sass */
+  .navigation-list > li > .link {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  /* line 31, ../../sass/components/navigation-list.sass */
+  .navigation-list > li:hover {
+    transition: 0.3s all;
+    background: #414141;
+  }
+  /* line 35, ../../sass/components/navigation-list.sass */
+  .navigation-list > li:not(:hover) {
+    transition: 0.7s all;
+  }
+  /* line 38, ../../sass/components/navigation-list.sass */
+  .navigation-list > li:first-child {
+    border-top: 1px solid #a8d6ff;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 42, ../../sass/components/navigation-list.sass */
+  .navigation-list {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  /* line 48, ../../sass/components/navigation-list.sass */
+  .navigation-list > li {
+    position: relative;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #a8d6ff;
+  }
+  /* line 54, ../../sass/components/navigation-list.sass */
+  .navigation-list > li > .link {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  /* line 59, ../../sass/components/navigation-list.sass */
+  .navigation-list > li:hover {
+    transition: 0.3s all;
+    background: #414141;
+  }
+  /* line 63, ../../sass/components/navigation-list.sass */
+  .navigation-list > li:not(:hover) {
+    transition: 0.7s all;
+  }
+  /* line 66, ../../sass/components/navigation-list.sass */
+  .navigation-list > li:first-child {
+    border-top: 1px solid #a8d6ff;
+  }
+}

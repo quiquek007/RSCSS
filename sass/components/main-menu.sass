@@ -1,11 +1,12 @@
 .main-menu
+	position: relative
+	display: flex
+	justify-content: space-around
+	align-items: center
 	width: 100%
 	height: 80px
 	border-bottom: 3px solid #262626
 	background: #303030
-	display: flex
-	justify-content: space-around
-	align-items: center
 
 	> .link:first-child
 		margin-left: 5%
@@ -13,3 +14,24 @@
 	> .link:last-child
 		margin-right: 10%
 
+@media screen and (max-width: 480px)
+	.main-menu
+		flex-direction: column
+		height: auto
+		border-bottom: none
+
+		> .link:last-child
+			display: none
+
+@media screen and (max-width: 768px)
+	.main-menu
+		flex-direction: column
+		height: auto
+		border-bottom: none
+		align-items: flex-start
+
+		> .link
+			padding: 10px 0px
+
+		> .link:last-child
+			display: none

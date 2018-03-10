@@ -31,3 +31,24 @@
 
 	&.-blue
 		color: #2a6496
+
+	&.-aligned
+		text-align: center
+
+	&.-button
+		background: #303030
+		padding: 20px
+		border: 1px solid #ffa500
+		
+		&:hover
+			transition: 0.3s all
+			background: #ffa500
+			color: #303030
+
+		&:not(:hover)
+			transition: 0.7s all
+
+@media screen and (max-width: 480px)
+	.link
+		font-size: 14px
+		

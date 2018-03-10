@@ -1,0 +1,19 @@
+#menu-button
+	position: absolute
+	width: 40px
+	height: 40px
+	right: 35px
+	top: 7px
+	background: url('../../img/menu.svg') no-repeat
+	transition: 0.3s all
+
+.-rotate
+	transform: rotate(-90deg)
+
+@media screen and (min-width: 768px)
+	#menu-button
+		display: none
+
+@media screen and (max-width: 768px)
+	#menu-button
+		display: block

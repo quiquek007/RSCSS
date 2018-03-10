@@ -1,31 +1,43 @@
 /* line 1, ../../sass/components/connection-form.sass */
 .connection-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 70%;
   height: 440px;
   margin-left: 15%;
   margin-top: 40px;
   padding: 0 10%;
   border: 1px solid #d19c1e;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 /* line 13, ../../sass/components/connection-form.sass */
 .connection-form > .input {
-  margin-bottom: 30px;
+  width: 100%;
+  min-height: 34px;
   font-style: italic;
+  margin-bottom: 30px;
+  padding: 6px 12px;
 }
-/* line 17, ../../sass/components/connection-form.sass */
+/* line 20, ../../sass/components/connection-form.sass */
 .connection-form > .text {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.25em;
   text-align: left;
-  margin-bottom: 20px;
 }
-/* line 23, ../../sass/components/connection-form.sass */
+/* line 26, ../../sass/components/connection-form.sass */
 .connection-form > .link {
   align-self: flex-start;
   text-transform: capitalize;
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 32, ../../sass/components/connection-form.sass */
+  .connection-form {
+    width: 98%;
+    margin-left: 1%;
+    padding: 0 1%;
+  }
 }

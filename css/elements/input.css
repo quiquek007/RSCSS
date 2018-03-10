@@ -1,14 +1,11 @@
 /* line 1, ../../sass/elements/input.sass */
 .input {
-  width: 100%;
-  min-height: 34px;
   font-family: "Roboto Regular";
   font-size: 16px;
   border: 1px solid #e5e6e7;
-  padding: 6px 12px;
   color: #555;
 }
-/* line 10, ../../sass/elements/input.sass */
+/* line 7, ../../sass/elements/input.sass */
 .input:focus {
   box-shadow: 0 0 10px rgba(0, 42, 255, 0.5);
 }

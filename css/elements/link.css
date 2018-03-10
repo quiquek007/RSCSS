@@ -38,3 +38,30 @@
 .link.-blue {
   color: #2a6496;
 }
+/* line 35, ../../sass/elements/link.sass */
+.link.-aligned {
+  text-align: center;
+}
+/* line 38, ../../sass/elements/link.sass */
+.link.-button {
+  background: #303030;
+  padding: 20px;
+  border: 1px solid #ffa500;
+}
+/* line 43, ../../sass/elements/link.sass */
+.link.-button:hover {
+  transition: 0.3s all;
+  background: #ffa500;
+  color: #303030;
+}
+/* line 48, ../../sass/elements/link.sass */
+.link.-button:not(:hover) {
+  transition: 0.7s all;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 52, ../../sass/elements/link.sass */
+  .link {
+    font-size: 14px;
+  }
+}

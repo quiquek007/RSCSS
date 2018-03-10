@@ -1,18 +1,49 @@
 /* line 1, ../../sass/components/main-menu.sass */
 .main-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 80px;
   border-bottom: 3px solid #262626;
   background: #303030;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
-/* line 10, ../../sass/components/main-menu.sass */
+/* line 11, ../../sass/components/main-menu.sass */
 .main-menu > .link:first-child {
   margin-left: 5%;
 }
-/* line 13, ../../sass/components/main-menu.sass */
+/* line 14, ../../sass/components/main-menu.sass */
 .main-menu > .link:last-child {
   margin-right: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 18, ../../sass/components/main-menu.sass */
+  .main-menu {
+    flex-direction: column;
+    height: auto;
+    border-bottom: none;
+  }
+  /* line 23, ../../sass/components/main-menu.sass */
+  .main-menu > .link:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 27, ../../sass/components/main-menu.sass */
+  .main-menu {
+    flex-direction: column;
+    height: auto;
+    border-bottom: none;
+    align-items: flex-start;
+  }
+  /* line 33, ../../sass/components/main-menu.sass */
+  .main-menu > .link {
+    padding: 10px 0px;
+  }
+  /* line 36, ../../sass/components/main-menu.sass */
+  .main-menu > .link:last-child {
+    display: none;
+  }
 }

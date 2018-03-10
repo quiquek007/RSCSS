@@ -1,0 +1,28 @@
+/* line 1, ../../sass/components/menu-button.sass */
+#menu-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 35px;
+  top: 7px;
+  background: url("../../img/menu.svg") no-repeat;
+  transition: 0.3s all;
+}
+
+/* line 10, ../../sass/components/menu-button.sass */
+.-rotate {
+  transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 768px) {
+  /* line 14, ../../sass/components/menu-button.sass */
+  #menu-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 18, ../../sass/components/menu-button.sass */
+  #menu-button {
+    display: block;
+  }
+}

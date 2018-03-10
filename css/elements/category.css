@@ -1,9 +1,15 @@
 /* line 1, ../../sass/elements/category.sass */
 .category {
-  margin-top: 20px;
   list-style-type: disc;
   font-family: "Open Sans";
   color: #333;
   font-size: 14px;
   line-height: 1.45em;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 9, ../../sass/elements/category.sass */
+  .category {
+    font-size: 12.5px;
+  }
 }

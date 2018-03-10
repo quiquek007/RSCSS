@@ -5,27 +5,48 @@
   float: left;
   align-items: center;
   width: 22%;
-  text-align: center;
   margin: 0 2%;
   margin-top: 50px;
 }
-/* line 11, ../../sass/components/advantages-items.sass */
+/* line 10, ../../sass/components/advantages-items.sass */
 .advantages-items > .title {
   margin-top: 25px;
-  font-weight: 700;
   margin-bottom: 20px;
+  text-align: center;
   white-space: nowrap;
 }
-/* line 17, ../../sass/components/advantages-items.sass */
+/* line 16, ../../sass/components/advantages-items.sass */
 .advantages-items > .text {
   margin-top: 20px;
-  font-size: 14px;
+  text-align: center;
 }
-/* line 20, ../../sass/components/advantages-items.sass */
+/* line 19, ../../sass/components/advantages-items.sass */
 .advantages-items > .text.-nomargin {
   margin-top: 0;
 }
-/* line 23, ../../sass/components/advantages-items.sass */
+/* line 22, ../../sass/components/advantages-items.sass */
 .advantages-items.-pullright {
   margin-left: 13%;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 26, ../../sass/components/advantages-items.sass */
+  .advantages-items {
+    width: 29%;
+  }
+  /* line 29, ../../sass/components/advantages-items.sass */
+  .advantages-items.-pullright {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 33, ../../sass/components/advantages-items.sass */
+  .advantages-items {
+    width: 100%;
+    margin: 40px 0;
+  }
+  /* line 37, ../../sass/components/advantages-items.sass */
+  .advantages-items.-pullright {
+    margin-left: 0;
+  }
 }

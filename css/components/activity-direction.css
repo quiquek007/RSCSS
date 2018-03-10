@@ -1,11 +1,11 @@
 /* line 1, ../../sass/components/activity-direction.sass */
 .activity-direction {
-  width: 40%;
   display: flex;
   flex-direction: column;
-  float: left;
+  justify-content: center;
   align-items: flex-start;
   margin-top: 20px;
+  flex-basis: 48%;
 }
 /* line 9, ../../sass/components/activity-direction.sass */
 .activity-direction > .title {
@@ -19,6 +19,23 @@
   text-transform: capitalize;
 }
 /* line 18, ../../sass/components/activity-direction.sass */
-.activity-direction.-pullright {
-  margin-left: 20%;
+.activity-direction > .category {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 22, ../../sass/components/activity-direction.sass */
+  .activity-direction {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 27, ../../sass/components/activity-direction.sass */
+  .activity-direction > .title {
+    font-size: 22px;
+  }
+  /* line 30, ../../sass/components/activity-direction.sass */
+  .activity-direction > .link {
+    font-size: 15px;
+  }
 }

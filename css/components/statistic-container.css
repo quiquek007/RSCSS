@@ -1,12 +1,28 @@
 /* line 1, ../../sass/components/statistic-container.sass */
 .statistic-container {
-  width: 100%;
-  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 10%;
   align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  margin-top: 80px;
+  padding: 30px 10%;
   background: rgba(0, 0, 0, 0.79) url("../../img/bg_lawyer_content2.jpg") no-repeat -250px -80px;
-  margin-top: 650px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 14, ../../sass/components/statistic-container.sass */
+  .statistic-container {
+    flex-direction: column;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.79) url("../../img/bg_lawyer_content2.jpg") no-repeat 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 20, ../../sass/components/statistic-container.sass */
+  .statistic-container {
+    margin-top: 50px;
+  }
 }

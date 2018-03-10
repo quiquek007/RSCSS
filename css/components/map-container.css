@@ -1,0 +1,18 @@
+/* line 1, ../../sass/components/map-container.sass */
+.map-container {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 7, ../../sass/components/map-container.sass */
+  .map-container {
+    width: 100%;
+    height: auto;
+  }
+  /* line 11, ../../sass/components/map-container.sass */
+  .map-container > .iframe {
+    height: 400px;
+  }
+}

@@ -9,3 +9,59 @@
 	
 	.link
 		padding: 10px 10px
+
+@media screen and (max-width: 480px)
+	.navigation-list
+		display: block
+		width: 100%
+		height: auto
+		margin-left: 0
+
+		> li
+			position: relative
+			width: 100%
+			float: left
+			border-bottom: 1px solid #a8d6ff
+
+			> .link
+				display: block
+				width: 100%
+				border: none
+	
+		> li:hover
+			transition: 0.3s all
+			background: #414141
+
+		> li:not(:hover)
+			transition: 0.7s all
+	
+		> li:first-child
+			border-top: 1px solid #a8d6ff
+
+@media screen and (max-width: 768px)
+	.navigation-list
+		display: block
+		width: 100%
+		height: auto
+		margin-left: 0
+
+		> li
+			position: relative
+			width: 100%
+			float: left
+			border-bottom: 1px solid #a8d6ff
+
+			> .link
+				display: block
+				width: 100%
+				border: none
+	
+		> li:hover
+			transition: 0.3s all
+			background: #414141
+
+		> li:not(:hover)
+			transition: 0.7s all
+	
+		> li:first-child
+			border-top: 1px solid #a8d6ff
