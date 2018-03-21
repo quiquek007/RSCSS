@@ -1,8 +1,8 @@
 .company-banner
 	display: flex
+	align-items: center
 	flex-direction: column
 	justify-content: center
-	align-items: center
 	width: 100%
 	height: 700px
 	background: rgba(0, 0, 0, 0.79) url('../../img/bg_lawyer_head.jpg') no-repeat -250px -80px
@@ -10,6 +10,18 @@
 
 	> .title:nth-child(1)
 		margin-bottom: 60px
+		font-size: 72px
+		font-weight: 700
 	
 	> .title:nth-child(2)
 		margin-bottom: 120px
+
+	> .link
+		padding: 20px
+		text-align: center
+
+@media screen and (max-width: 480px)
+	.company-banner
+		> .title:nth-child(1)
+			font-size: 48px
+			

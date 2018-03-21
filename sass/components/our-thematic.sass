@@ -1,20 +1,50 @@
 .our-thematic
 	display: flex
 	flex-direction: column
-	justify-content: center
 	align-items: center
-	width: 80%
-	margin: 0 auto
+	width: 100%
+	padding: 0 10%
 	margin-top: 100px
 	text-align: center
 
 	> .title
 		margin-top: 20px
 		font-size: 48px
+		color: #333
 	
 	> .text
 		margin-top: 20px
 
+	> [class="text"]:nth-last-of-type(2)
+		font-size: 48px
+		font-weight: 700
+		color: #d19c1e
+
+//	&:nth-child(8)
+//		> .text:nth-child(2)
+
+@media screen and (max-width: 768px)
+	.our-thematic
+		> .title
+			font-size: 38px
+	
+		> .text
+			font-size: 22px
+
+		> [class="text"]:nth-last-of-type(2)
+			font-size: 28px
+
 @media screen and (max-width: 480px)
 	.our-thematic
 		width: 100%
+		padding: 0 5%
+
+		> .title
+			font-size: 28px
+
+		> .text
+			margin-top: 8px
+
+		> [class="text"]:nth-last-of-type(2)
+			font-size: 21px
+			

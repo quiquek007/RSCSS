@@ -2,26 +2,59 @@
 .our-thematic {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 10%;
   margin-top: 100px;
   text-align: center;
 }
-/* line 11, ../../sass/components/our-thematic.sass */
+/* line 10, ../../sass/components/our-thematic.sass */
 .our-thematic > .title {
   margin-top: 20px;
   font-size: 48px;
+  color: #333;
 }
 /* line 15, ../../sass/components/our-thematic.sass */
 .our-thematic > .text {
   margin-top: 20px;
 }
+/* line 18, ../../sass/components/our-thematic.sass */
+.our-thematic > [class="text"]:nth-last-of-type(2) {
+  font-size: 48px;
+  font-weight: 700;
+  color: #d19c1e;
+}
 
+@media screen and (max-width: 768px) {
+  /* line 28, ../../sass/components/our-thematic.sass */
+  .our-thematic > .title {
+    font-size: 38px;
+  }
+  /* line 31, ../../sass/components/our-thematic.sass */
+  .our-thematic > .text {
+    font-size: 22px;
+  }
+  /* line 34, ../../sass/components/our-thematic.sass */
+  .our-thematic > [class="text"]:nth-last-of-type(2) {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 480px) {
-  /* line 19, ../../sass/components/our-thematic.sass */
+  /* line 38, ../../sass/components/our-thematic.sass */
   .our-thematic {
     width: 100%;
+    padding: 0 5%;
+  }
+  /* line 42, ../../sass/components/our-thematic.sass */
+  .our-thematic > .title {
+    font-size: 28px;
+  }
+  /* line 45, ../../sass/components/our-thematic.sass */
+  .our-thematic > .text {
+    margin-top: 8px;
+  }
+  /* line 48, ../../sass/components/our-thematic.sass */
+  .our-thematic > [class="text"]:nth-last-of-type(2) {
+    font-size: 21px;
   }
 }

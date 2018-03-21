@@ -1,40 +1,54 @@
 /* line 1, ../../sass/components/activity-direction.sass */
 .activity-direction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  width: 40%;
   margin-top: 20px;
-  flex-basis: 48%;
 }
-/* line 9, ../../sass/components/activity-direction.sass */
+/* line 5, ../../sass/components/activity-direction.sass */
 .activity-direction > .title {
+  display: block;
+  padding: 0 0 0 10px;
+  color: #333;
   font-size: 24px;
   font-weight: 900;
+  text-align: left;
+  white-space: nowrap;
 }
-/* line 13, ../../sass/components/activity-direction.sass */
+/* line 14, ../../sass/components/activity-direction.sass */
 .activity-direction > .link {
   margin-top: 20px;
+  color: #d19c1e;
   font-size: 16px;
   text-transform: capitalize;
 }
-/* line 18, ../../sass/components/activity-direction.sass */
+/* line 20, ../../sass/components/activity-direction.sass */
 .activity-direction > .category {
   margin-top: 20px;
 }
 
 @media screen and (max-width: 980px) {
-  /* line 22, ../../sass/components/activity-direction.sass */
+  /* line 24, ../../sass/components/activity-direction.sass */
   .activity-direction {
-    align-items: center;
+    width: 540px;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 29, ../../sass/components/activity-direction.sass */
+  .activity-direction {
+    width: 410px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 27, ../../sass/components/activity-direction.sass */
+  /* line 33, ../../sass/components/activity-direction.sass */
+  .activity-direction {
+    width: 304px;
+  }
+  /* line 35, ../../sass/components/activity-direction.sass */
   .activity-direction > .title {
+    white-space: normal;
     font-size: 22px;
   }
-  /* line 30, ../../sass/components/activity-direction.sass */
+  /* line 39, ../../sass/components/activity-direction.sass */
   .activity-direction > .link {
     font-size: 15px;
   }

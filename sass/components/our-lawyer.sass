@@ -5,24 +5,38 @@
 	align-items: flex-start
 	width: 100%
 	height: 700px
+	padding: 0 50px 0 50%
 	margin-top: 100px
-	padding-left: 50%
 	background: url('../../img/bg_lawyer.jpg') no-repeat -250px
 
-	> span:nth-child(1)
+	> .title
 		margin-bottom: 20px
-		font-size: 48px
+		color: #000000
+
+	> .title:nth-child(1)
 		font-weight: 700
+		font-size: 48px
 
-	> span:nth-child(2),
-	> p:nth-child(3)
-		font-family: 'Roboto Regular'	
+	> .title:nth-child(2)
 		font-size: 18px
-		color: #303030
-		line-height: 1.45em
 
-	> p:nth-child(3)
+	> .text
 		margin-top: 40px
+
+//	> .title
+//		margin-bottom: 20px
+//		font-size: 48px
+//		font-weight: 700
+//
+//	> .text:nth-child(2),
+//	> .text:nth-child(3)
+//		font-family: 'Roboto Regular'	
+//		font-size: 18px
+//		color: #303030
+//		line-height: 1.45em
+//
+//	> p:nth-child(3)
+//		margin-top: 40px
 
 @media screen and (max-width: 768px)
 	.our-lawyer
@@ -36,3 +50,9 @@
 	.our-lawyer
 		padding-left: 25%
 		background: url('../../img/bg_lawyer.jpg') no-repeat 35%
+	
+		> .title:nth-child(1)
+			font-size: 26px
+
+		> .title:nth-child(2)
+			font-size: 16px

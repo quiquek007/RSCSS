@@ -1,17 +1,19 @@
 .activity-direction
-	display: flex
-	flex-direction: column
-	justify-content: center
-	align-items: flex-start
+	width: 40%
 	margin-top: 20px
-	flex-basis: 48%
 	
 	> .title
+		display: block
+		padding: 0 0 0 10px
+		color: #333
 		font-size: 24px
 		font-weight: 900
+		text-align: left
+		white-space: nowrap
 
 	> .link
 		margin-top: 20px
+		color: #d19c1e
 		font-size: 16px
 		text-transform: capitalize
 
@@ -20,11 +22,18 @@
 
 @media screen and (max-width: 980px)
 	.activity-direction
-		align-items: center
+		width: 540px
+		margin: 20px auto
+
+@media screen and (max-width: 768px)
+	.activity-direction
+		width: 410px
 
 @media screen and (max-width: 480px)
 	.activity-direction
+		width: 304px
 		> .title
+			white-space: normal
 			font-size: 22px
 
 		> .link

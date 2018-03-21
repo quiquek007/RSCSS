@@ -1,35 +1,74 @@
+@import 'variablies'
+
 .connection-form
-	display: flex
-	flex-direction: column
-	align-items: center
-	justify-content: center
-	width: 70%
-	height: 440px
-	margin-left: 15%
+	width: 100%
+	padding: 75px 10%
 	margin-top: 40px
-	padding: 0 10%
-	border: 1px solid #d19c1e
+	background: linear-gradient(to bottom, #ffffff, #303030 90%) 
+	text-align: center
+
+	> .input:first-child
+		margin-right: 20px
+		background: $svg_mail no-repeat
+		background-position: 10px
+		background-size: 20px
+
+	> .input:nth-child(2)
+		background: $svg_person no-repeat
+		background-position: 10px
+		background-size: 20px
 
 	> .input
-		width: 100%
-		min-height: 34px
+		width: 45%
+		height: 34px
+		padding: 6px 10px 6px 35px
+		line-height: 34px
+		margin-bottom: 25px
 		font-style: italic
-		margin-bottom: 30px
-		padding: 6px 12px
+
+		&:focus
+			background-color: rgba(255, 255, 255, .5)
+
+	> .textarea
+		display: block
+		width: calc(90% + 25px)
+		padding: 5px
+		margin: 0 auto
+		margin-bottom: 20px
+		background: transparent
+		border: 1px solid #E5E6E7
+
+		&:focus
+			background-color: rgba(255, 255, 255, .5)
 
 	> .text
-		margin-bottom: 20px
 		font-size: 14px
+		font-weight: bold
 		line-height: 1.25em
 		text-align: left
 
-	> .link
-		align-self: flex-start
-		text-transform: capitalize
+	> .link:nth-child(6)
+		color: #11be25
 		font-weight: 300
+		text-transform: capitalize
 
-@media screen and (max-width: 768px)
+	> .link:last-child
+		display: inline-block
+		margin-top: 20px
+		align-self: center
+
+
+@media screen and (max-width: 480px)
 	.connection-form
-		width: 98%
-		margin-left: 1%
-		padding: 0 1%
+		padding: 50px 0
+		> .input
+			width: 95%
+
+		> .input:first-child
+			margin-right: 0
+
+		> .textarea
+			width: 95%
+
+		> .text
+			color: rebeccapurple

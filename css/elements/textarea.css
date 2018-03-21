@@ -1,0 +1,32 @@
+/* line 1, ../../sass/elements/textarea.sass */
+.textarea {
+  font-family: "Open Sans";
+  font-style: italic;
+  color: #333;
+  resize: none;
+  border: 1px solid transparent;
+}
+/* line 8, ../../sass/elements/textarea.sass */
+.textarea:hover {
+  transition: 0.3s all;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 78, 0.5);
+  color: #0c413d;
+}
+/* line 15, ../../sass/elements/textarea.sass */
+.textarea:not(:hover) {
+  transition: 0.7s all;
+}
+/* line 18, ../../sass/elements/textarea.sass */
+.textarea:focus {
+  transition: 0.3s all;
+  box-shadow: 0 0 10px rgba(0, 42, 255, 0.5);
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  color: #0d4dc6;
+}
+/* line 25, ../../sass/elements/textarea.sass */
+.textarea:not(:focus) {
+  transition: 0.7s all;
+}

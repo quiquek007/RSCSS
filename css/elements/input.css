@@ -6,6 +6,26 @@
   color: #555;
 }
 /* line 7, ../../sass/elements/input.sass */
+.input:hover {
+  transition: 0.3s all;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 78, 0.5);
+  color: #40c40f;
+}
+/* line 14, ../../sass/elements/input.sass */
+.input:not(:hover) {
+  transition: 0.7s all;
+}
+/* line 17, ../../sass/elements/input.sass */
 .input:focus {
+  transition: 0.3s all;
   box-shadow: 0 0 10px rgba(0, 42, 255, 0.5);
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  color: #0d4dc6;
+}
+/* line 24, ../../sass/elements/input.sass */
+.input:not(:focus) {
+  transition: 0.7s all;
 }

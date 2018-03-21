@@ -1,8 +1,7 @@
 .location-info
 	position: relative
-	display: flex
-	flex-direction: column
-	justify-content: center
+	display: block
+	float: left
 	width: 50%
 	height: 100%
 	padding-left: 5%
@@ -15,7 +14,13 @@
 		border: 30px solid transparent
 		border-right: 40px solid #303030
 
+	> .link
+		display: block
+		margin-top: 120px
+
 	> .text
+		display: block
+		color: #fff
 		font-size: 20px
 
 	> .text:nth-child(even)
@@ -23,19 +28,40 @@
 		
 @media screen and (max-width: 768px)
 	.location-info
-		flex-direction: row
-		flex-wrap: wrap
-		align-content: stretch
-		justify-content: space-around
 		width: 100%
-		padding-left: 0
+		padding: 10px 10px
+		background: #303030
 	
 		&:after
 			display: none
 
+		> .link
+			display: inline-block
+			margin-top: 0
+
+		> .text
+			display: block
+			float: left
+			width: 50%
+			text-align: center
+
 		> .text:nth-child(even)
 			margin-top: 0
+			float: right
+
+		> .text:nth-child(2n+3)
+			text-align: left
 
 		> .text
 			font-size: 14px
 	
+@media screen and (max-width: 480px)
+	.location-info
+		> .link
+			font-size: 30px
+
+		> .text
+			font-size: 10px
+			> .link
+				font-size: 10px
+				

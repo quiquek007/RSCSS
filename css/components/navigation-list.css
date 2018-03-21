@@ -17,21 +17,21 @@
 @media screen and (max-width: 480px) {
   /* line 14, ../../sass/components/navigation-list.sass */
   .navigation-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-left: 0;
   }
-  /* line 20, ../../sass/components/navigation-list.sass */
+  /* line 21, ../../sass/components/navigation-list.sass */
   .navigation-list > li {
     position: relative;
     width: 100%;
-    float: left;
     border-bottom: 1px solid #a8d6ff;
   }
   /* line 26, ../../sass/components/navigation-list.sass */
   .navigation-list > li > .link {
-    display: block;
+    display: flex;
     width: 100%;
     border: none;
   }
@@ -52,21 +52,21 @@
 @media screen and (max-width: 768px) {
   /* line 42, ../../sass/components/navigation-list.sass */
   .navigation-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-left: 0;
   }
-  /* line 48, ../../sass/components/navigation-list.sass */
+  /* line 49, ../../sass/components/navigation-list.sass */
   .navigation-list > li {
     position: relative;
     width: 100%;
-    float: left;
     border-bottom: 1px solid #a8d6ff;
   }
   /* line 54, ../../sass/components/navigation-list.sass */
   .navigation-list > li > .link {
-    display: block;
+    display: flex;
     width: 100%;
     border: none;
   }

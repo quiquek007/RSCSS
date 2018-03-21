@@ -1,43 +1,90 @@
-/* line 1, ../../sass/components/connection-form.sass */
+/* line 3, ../../sass/components/connection-form.sass */
 .connection-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  height: 440px;
-  margin-left: 15%;
-  margin-top: 40px;
-  padding: 0 10%;
-  border: 1px solid #d19c1e;
-}
-/* line 13, ../../sass/components/connection-form.sass */
-.connection-form > .input {
   width: 100%;
-  min-height: 34px;
-  font-style: italic;
-  margin-bottom: 30px;
-  padding: 6px 12px;
+  padding: 75px 10%;
+  margin-top: 40px;
+  background: linear-gradient(to bottom, #ffffff, #303030 90%);
+  text-align: center;
 }
-/* line 20, ../../sass/components/connection-form.sass */
-.connection-form > .text {
+/* line 10, ../../sass/components/connection-form.sass */
+.connection-form > .input:first-child {
+  margin-right: 20px;
+  background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTYsNjBjLTU3Ljg5NywwLTEwNSw0Ny4xMDMtMTA1LDEwNWMwLDM1Ljk0MywxOC4xMjYsNjkuMDE1LDQ4LjQ4Nyw4OC40NjdjMzEuMDAzLDE5Ljg2Myw2OS4wNiwyMS45NzQsMTA0LjQyNiw1LjcwMyAgICBjNy41MjUtMy40NjIsMTAuODItMTIuMzcsNy4zNTctMTkuODk2Yy0zLjQ2Mi03LjUyNS0xMi4zNjktMTAuODItMTkuODk2LTcuMzU4Yy0yNS44NiwxMS44OTgtNTMuNDU0LDEwLjU0NS03NS43MDMtMy43MDkgICAgQzE5My45NjEsMjE0LjI5OCwxODEsMTkwLjY2OSwxODEsMTY1YzAtNDEuMzU1LDMzLjY0NS03NSw3NS03NXM3NSwzMy42NDUsNzUsNzVjMCw4LjI3MS02LjcyOSwxNS0xNSwxNSAgICBjLTcuNTU4LDAtMTQuNjE4LTUuNzMyLTE0Ljk5OC0xNC43NzJDMzAxLjAwMSwxNjUuMTUyLDMwMSwxNjUuMDc2LDMwMSwxNjVjMC0yNC44MTMtMjAuMTg3LTQ1LTQ1LTQ1cy00NSwyMC4xODctNDUsNDUgICAgczIwLjE4Nyw0NSw0NSw0NWMxMS41MTYsMCwyMi4wMzEtNC4zNTMsMjkuOTk5LTExLjQ5NEMyOTMuOTY2LDIwNS42NDgsMzA0LjQ4MywyMTAsMzE2LDIxMGMyNC44MTMsMCw0NS0yMC4xODcsNDUtNDUgICAgQzM2MSwxMDcuMTAzLDMxMy44OTcsNjAsMjU2LDYweiBNMjcwLjc4OSwxNjcuNDA2QzI2OS42MzEsMTc0LjUzNSwyNjMuNDUsMTgwLDI1NiwxODBjLTguMjcxLDAtMTUtNi43MjktMTUtMTVzNi43MjktMTUsMTUtMTUgICAgYzcuNjkxLDAsMTQuMDQsNS44MiwxNC44OTUsMTMuMjg1QzI3MC42NzEsMTY0LjY0OCwyNzAuNjM0LDE2Ni4wMzUsMjcwLjc4OSwxNjcuNDA2eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ4MC45OTksMTk2Ljk3NmMtMC4wMDQtMy44NzktMS41NjYtNy43NTYtNC4zOTMtMTAuNTgzTDQyMSwxMzAuNzg3VjE1YzAtOC4yODQtNi43MTYtMTUtMTUtMTVIMTA2ICAgIGMtOC4yODQsMC0xNSw2LjcxNi0xNSwxNXYxMTUuNzg3bC01NS42MDYsNTUuNjA2Yy0wLjA1MiwwLjA1Mi0wLjA5NiwwLjExLTAuMTQ3LDAuMTYzYy0yLjgxMSwyLjg5Ni00LjI0LDYuNzA5LTQuMjQ2LDEwLjQyICAgIGMwLDAuMDEtMC4wMDEsMC4wMTktMC4wMDEsMC4wMjlWNDY3YzAsMjQuODQ1LDIwLjIxNiw0NSw0NSw0NWgzNjBjMjQuODM5LDAsNDUtMjAuMjA3LDQ1LTQ1VjE5Ny4wMDUgICAgQzQ4MSwxOTYuOTk1LDQ4MC45OTksMTk2Ljk4Niw0ODAuOTk5LDE5Ni45NzZ6IE00MjEsMTczLjIxM0w0NDQuNzg3LDE5N0w0MjEsMjIwLjc4N1YxNzMuMjEzeiBNMTIxLDEzNy4wMDUgICAgYzAtMC4wMDMsMC0wLjAwNywwLTAuMDFWMzBoMjcwdjEwNi45OTVjMCwwLjAwMywwLDAuMDA3LDAsMC4wMXYxMTMuNzgyTDMwOS43ODcsMzMySDIwMi4yMTNMMTIxLDI1MC43ODdWMTM3LjAwNXogTTkxLDE3My4yMTMgICAgdjQ3LjU3NEw2Ny4yMTMsMTk3TDkxLDE3My4yMTN6IE02MSw0NjAuNzg3VjIzMy4yMTNMMTc0Ljc4NywzNDdMNjEsNDYwLjc4N3ogTTgyLjIxNCw0ODJsMTE5Ljk5OS0xMjBoMTA3LjU3NGwxMTkuOTk5LDEyMEg4Mi4yMTQgICAgeiBNNDUxLDQ2MC43ODdMMzM3LjIxMywzNDdMNDUxLDIzMy4yMTNWNDYwLjc4N3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K") no-repeat;
+  background-position: 10px;
+  background-size: 20px;
+}
+/* line 16, ../../sass/components/connection-form.sass */
+.connection-form > .input:nth-child(2) {
+  background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyOTkuOTk3IDI5OS45OTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5OS45OTcgMjk5Ljk5NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE0OS45OTYsMEM2Ny4xNTcsMCwwLjAwMSw2Ny4xNTgsMC4wMDEsMTQ5Ljk5N2MwLDgyLjgzNyw2Ny4xNTYsMTUwLDE0OS45OTUsMTUwczE1MC02Ny4xNjMsMTUwLTE1MCAgICBDMjk5Ljk5Niw2Ny4xNTYsMjMyLjgzNSwwLDE0OS45OTYsMHogTTE1MC40NTMsMjIwLjc2M3YtMC4wMDJoLTAuOTE2SDg1LjQ2NWMwLTQ2Ljg1Niw0MS4xNTItNDYuODQ1LDUwLjI4NC01OS4wOTdsMS4wNDUtNS41ODcgICAgYy0xMi44My02LjUwMi0yMS44ODctMjIuMTc4LTIxLjg4Ny00MC41MTJjMC0yNC4xNTQsMTUuNzEyLTQzLjczOCwzNS4wODktNDMuNzM4YzE5LjM3NywwLDM1LjA4OSwxOS41ODQsMzUuMDg5LDQzLjczOCAgICBjMCwxOC4xNzgtOC44OTYsMzMuNzU2LTIxLjU1NSw0MC4zNjFsMS4xOSw2LjM0OWMxMC4wMTksMTEuNjU4LDQ5LjgwMiwxMi40MTgsNDkuODAyLDU4LjQ4OEgxNTAuNDUzeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=") no-repeat;
+  background-position: 10px;
+  background-size: 20px;
+}
+/* line 21, ../../sass/components/connection-form.sass */
+.connection-form > .input {
+  width: 45%;
+  height: 34px;
+  padding: 6px 10px 6px 35px;
+  line-height: 34px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+/* line 29, ../../sass/components/connection-form.sass */
+.connection-form > .input:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 32, ../../sass/components/connection-form.sass */
+.connection-form > .textarea {
+  display: block;
+  width: calc(90% + 25px);
+  padding: 5px;
+  margin: 0 auto;
   margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid #E5E6E7;
+}
+/* line 41, ../../sass/components/connection-form.sass */
+.connection-form > .textarea:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 44, ../../sass/components/connection-form.sass */
+.connection-form > .text {
   font-size: 14px;
+  font-weight: bold;
   line-height: 1.25em;
   text-align: left;
 }
-/* line 26, ../../sass/components/connection-form.sass */
-.connection-form > .link {
-  align-self: flex-start;
-  text-transform: capitalize;
+/* line 50, ../../sass/components/connection-form.sass */
+.connection-form > .link:nth-child(6) {
+  color: #11be25;
   font-weight: 300;
+  text-transform: capitalize;
+}
+/* line 55, ../../sass/components/connection-form.sass */
+.connection-form > .link:last-child {
+  display: inline-block;
+  margin-top: 20px;
+  align-self: center;
 }
 
-@media screen and (max-width: 768px) {
-  /* line 32, ../../sass/components/connection-form.sass */
+@media screen and (max-width: 480px) {
+  /* line 62, ../../sass/components/connection-form.sass */
   .connection-form {
-    width: 98%;
-    margin-left: 1%;
-    padding: 0 1%;
+    padding: 50px 0;
+  }
+  /* line 64, ../../sass/components/connection-form.sass */
+  .connection-form > .input {
+    width: 95%;
+  }
+  /* line 67, ../../sass/components/connection-form.sass */
+  .connection-form > .input:first-child {
+    margin-right: 0;
+  }
+  /* line 70, ../../sass/components/connection-form.sass */
+  .connection-form > .textarea {
+    width: 95%;
+  }
+  /* line 73, ../../sass/components/connection-form.sass */
+  .connection-form > .text {
+    color: rebeccapurple;
   }
 }

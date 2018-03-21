@@ -1,60 +1,39 @@
-@import 'variablies'
+//@import 'variablies'
 
 .our-advantages
 	display: flex
+	flex-wrap: wrap
 	width: 100%
 
-	&.-first
-		> div:nth-child(1)
-			> span:nth-child(1)
-				&:before
-					display: flex
-					height: 65px
-					content: $svg_planning
-					padding-bottom: 20px
+//
+//	.title
+//		&.-svg:before
+//			position: absolute
+//			top: 0
+//			left: calc((100% - 35px)/2)
+//			display: block
+//			width: 35px
+//
+//	.advantages-items:nth-child(1)
+//		.title
+//			&.-svg:before
+//				content: $svg_planning
 		
-		> div:nth-child(2)
-			> span:nth-child(1)
-				&:before
-					display: flex
-					height: 65px
-					content: $svg_lock
-					padding-bottom: 20px
-		
-		> div:nth-child(3)
-			> span:nth-child(1)
-				&:before
-					display: flex
-					height: 65px
-					content: $svg_employee
-					padding-bottom: 20px
-
-
-	&.-second
-		> div:nth-child(1)
-			> span:nth-child(1)
-				&:before
-					display: flex
-					height: 65px
-					content: $svg_badge
-					padding-bottom: 20px
-		
-		> div:nth-child(2)
-			> span:nth-child(1)
-				&:before
-					display: flex
-					height: 65px
-					content: $svg_gears
-					padding-bottom: 20px
-		
-		> div:nth-child(3)
-			> span:nth-child(1)
-				&:before
-					display: flex
-					height: 65px
-					content: $svg_money
-					padding-bottom: 20px
+//		
+//					content: $svg_lock
+//
+//		
+//		
+//					content: $svg_employee
+//	
+//					content: $svg_badge
+//		
+//					content: $svg_gears
+//			
+//					content: $svg_money
+				
 
 @media screen and (max-width: 768px)
 	.our-advantages
+		margin-top: 40px
 		flex-direction: column

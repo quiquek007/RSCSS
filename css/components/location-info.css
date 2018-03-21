@@ -1,14 +1,13 @@
 /* line 1, ../../sass/components/location-info.sass */
 .location-info {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+  float: left;
   width: 50%;
   height: 100%;
   padding-left: 5%;
 }
-/* line 10, ../../sass/components/location-info.sass */
+/* line 9, ../../sass/components/location-info.sass */
 .location-info:after {
   position: absolute;
   left: -50px;
@@ -17,35 +16,70 @@
   border: 30px solid transparent;
   border-right: 40px solid #303030;
 }
-/* line 18, ../../sass/components/location-info.sass */
-.location-info > .text {
-  font-size: 20px;
+/* line 17, ../../sass/components/location-info.sass */
+.location-info > .link {
+  display: block;
+  margin-top: 120px;
 }
 /* line 21, ../../sass/components/location-info.sass */
+.location-info > .text {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+}
+/* line 26, ../../sass/components/location-info.sass */
 .location-info > .text:nth-child(even) {
   margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 25, ../../sass/components/location-info.sass */
+  /* line 30, ../../sass/components/location-info.sass */
   .location-info {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-around;
     width: 100%;
-    padding-left: 0;
+    padding: 10px 10px;
+    background: #303030;
   }
-  /* line 33, ../../sass/components/location-info.sass */
+  /* line 35, ../../sass/components/location-info.sass */
   .location-info:after {
     display: none;
   }
-  /* line 36, ../../sass/components/location-info.sass */
-  .location-info > .text:nth-child(even) {
+  /* line 38, ../../sass/components/location-info.sass */
+  .location-info > .link {
+    display: inline-block;
     margin-top: 0;
   }
-  /* line 39, ../../sass/components/location-info.sass */
+  /* line 42, ../../sass/components/location-info.sass */
+  .location-info > .text {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  /* line 48, ../../sass/components/location-info.sass */
+  .location-info > .text:nth-child(even) {
+    margin-top: 0;
+    float: right;
+  }
+  /* line 52, ../../sass/components/location-info.sass */
+  .location-info > .text:nth-child(2n+3) {
+    text-align: left;
+  }
+  /* line 55, ../../sass/components/location-info.sass */
   .location-info > .text {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 60, ../../sass/components/location-info.sass */
+  .location-info > .link {
+    font-size: 30px;
+  }
+  /* line 63, ../../sass/components/location-info.sass */
+  .location-info > .text {
+    font-size: 10px;
+  }
+  /* line 65, ../../sass/components/location-info.sass */
+  .location-info > .text > .link {
+    font-size: 10px;
   }
 }

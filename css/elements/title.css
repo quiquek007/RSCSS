@@ -5,40 +5,19 @@
   font-size: 22px;
   text-align: center;
 }
-/* line 7, ../../sass/elements/title.sass */
-.title.-large {
-  font-size: 72px;
-  font-weight: 700;
-}
-/* line 11, ../../sass/elements/title.sass */
-.title.-dark {
-  color: #333;
-}
-/* line 14, ../../sass/elements/title.sass */
-.title.-orange {
-  color: #d19c1e;
-}
-/* line 17, ../../sass/elements/title.sass */
-.title.-item {
-  font-weight: 700;
-}
 
 @media screen and (max-width: 980px) {
-  /* line 21, ../../sass/elements/title.sass */
+  /* line 8, ../../sass/elements/title.sass */
   .title {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 25, ../../sass/elements/title.sass */
+  /* line 12, ../../sass/elements/title.sass */
   .title {
     font-size: 18px;
   }
-  /* line 28, ../../sass/elements/title.sass */
-  .title.-large {
-    font-size: 45px;
-  }
-  /* line 31, ../../sass/elements/title.sass */
+  /* line 15, ../../sass/elements/title.sass */
   .title.-thematic {
     font-size: 26px;
   }
